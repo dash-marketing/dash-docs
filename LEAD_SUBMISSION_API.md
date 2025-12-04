@@ -6,7 +6,7 @@ The Dash Lead Submission API allows you to programmatically submit leads to your
 
 **Base URL:** `https://api.dashmarketing.io`
 
-**Endpoint:** `POST /lead/Submit`
+**Endpoint:** `POST /lead/submit`
 
 ---
 
@@ -167,7 +167,7 @@ The API enforces rate limiting of 5 requests per 60 seconds per IP address to pr
 **Request:**
 
 ```bash
-curl -X POST https://api.yourdomain.com/lead/Submit \
+curl -X POST https://api.yourdomain.com/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: sk_live_abc123xyz789" \
   -d '{
@@ -197,7 +197,7 @@ curl -X POST https://api.yourdomain.com/lead/Submit \
 **Request:**
 
 ```bash
-curl -X POST https://api.yourdomain.com/lead/Submit \
+curl -X POST https://api.yourdomain.com/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: sk_live_abc123xyz789" \
   -d '{
@@ -240,7 +240,7 @@ curl -X POST https://api.yourdomain.com/lead/Submit \
 ```javascript
 const submitLead = async (leadData) => {
   try {
-    const response = await fetch('https://api.yourdomain.com/lead/Submit', {
+    const response = await fetch('https://api.yourdomain.com/lead/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -251,7 +251,7 @@ const submitLead = async (leadData) => {
         firstName: leadData.firstName,
         lastName: leadData.lastName,
         phone: leadData.phone,
-        locationUuid: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // Your location UUID
+        locationUuid: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // location UUID
         source: 'Website',
         formName: 'Contact Form',
         notes: leadData.message,
@@ -286,7 +286,7 @@ import os
 from datetime import datetime
 
 def submit_lead(email, first_name=None, last_name=None, phone=None, notes=None, metadata=None):
-    url = "https://api.yourdomain.com/lead/Submit"
+    url = "https://api.dashmarketing.io/lead/submit"
 
     headers = {
         "Content-Type": "application/json",
@@ -344,14 +344,14 @@ submit_lead(
 <?php
 
 function submitLead($email, $firstName = null, $lastName = null, $phone = null, $notes = null, $metadata = []) {
-    $url = "https://api.yourdomain.com/lead/Submit";
+    $url = "https://api.dashmarketing.io/lead/submit";
 
     $data = [
         'email' => $email,
         'firstName' => $firstName,
         'lastName' => $lastName,
         'phone' => $phone,
-        'locationUuid' => 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // Your location UUID
+        'locationUuid' => 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // location UUID
         'source' => 'Website',
         'formName' => 'Contact Form',
         'notes' => $notes,

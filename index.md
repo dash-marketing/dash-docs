@@ -69,7 +69,7 @@ Submit leads to your Dash Core locations programmatically. Perfect for:
 **Quick Example:**
 
 ```bash
-curl -X POST https://api.dashmarketing.io/lead/Submit \
+curl -X POST https://api.dashmarketing.io/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: your_api_key_here" \
   -d '{
@@ -204,31 +204,6 @@ Format: user@domain.com
 
 ---
 
-## SDKs and Libraries
-
-Official SDKs are in development. In the meantime, you can use standard HTTP clients:
-
-**JavaScript/TypeScript:**
-- `fetch` API
-- `axios`
-- `node-fetch`
-
-**Python:**
-- `requests`
-- `httpx`
-- `urllib3`
-
-**PHP:**
-- `cURL`
-- `Guzzle`
-- `file_get_contents` with stream context
-
-**C#/.NET:**
-- `HttpClient`
-- `RestSharp`
-
----
-
 ## Webhooks
 
 Webhook support is coming soon. Webhooks will allow you to receive real-time notifications for events such as:
@@ -267,7 +242,7 @@ Always implement proper error handling:
 
 ```javascript
 try {
-  const response = await fetch('https://api.dashmarketing.io/lead/Submit', {
+  const response = await fetch('https://api.dashmarketing.io/lead/submit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
