@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Home
+title: Dash Marketing API Documentation
 ---
-
-# Dash Marketing API Documentation
 
 ## Welcome to Dash Marketing
 

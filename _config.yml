@@ -1,5 +1,5 @@
 # Site settings
-title: Dash Documentation
+title: Dash Marketing API Documentation
 description: Documentation for Dash Marketing Platform
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dashmarketing.io" # the base hostname & protocol for your site
