@@ -489,7 +489,7 @@ Your location UUID is a unique identifier for each of your business locations. Y
 
 For technical support, questions, or to request higher rate limits:
 
-- **Email:** support@dashmarketing.com
+- **Email:** support@dashmarketing.io
 - **Documentation:** https://docs.dashmarketing.io
 
 ---
