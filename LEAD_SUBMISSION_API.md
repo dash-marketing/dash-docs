@@ -83,8 +83,10 @@ The request body must be a JSON object with the following fields:
 |-------|------|-------------|------------|
 | `firstName` | string | Lead's first name | 100 |
 | `lastName` | string | Lead's last name | 100 |
+| `companyName` | string | Lead's company name | 100 |
 | `phone` | string | Lead's phone number (must be valid phone format) | 20 |
 | `estimatedStartDate` | string | ISO 8601 date when lead wants to start service (e.g., "2025-01-15T00:00:00Z") | - |
+| `estimatedStartDateString` | string | Lead's estimated start date as any value (e.g., "1-2 Days") | 100 |
 | `source` | string | Source of the lead. Valid values: `QR`, `Website`, `Referral`, `InPerson`, `SocialMedia`, `Advertisement`, `DashPage`, `DashForm`, `Other` | 100 |
 | `sourceDetails` | string | Additional details about the source (e.g., "Google Ads Campaign XYZ") | 200 |
 | `notes` | string | Additional notes about the lead or their inquiry | 2000 |
