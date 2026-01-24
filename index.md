@@ -320,7 +320,7 @@ Dash Marketing is committed to protecting user data:
 
 - All API traffic is encrypted via HTTPS/TLS
 - API keys are hashed and stored securely
-- Lead data is stored in compliance with GDPR and CCPA
+- Lead data is stored in compliance with GDPR and SOC 2 Type 2
 - Data retention policies can be configured per organization
 
 For our full Privacy Policy, visit: https://www.dashmarketing.io/privacy
@@ -339,6 +339,6 @@ Your input helps us build better tools for your business.
 
 ---
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
-**Version:** 1.0
+**Version:** 1.1

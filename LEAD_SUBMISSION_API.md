@@ -169,7 +169,7 @@ The API enforces rate limiting of 5 requests per 60 seconds per IP address to pr
 **Request:**
 
 ```bash
-curl -X POST https://api.yourdomain.com/lead/submit \
+curl -X POST https://api.dashmarketing.io/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: sk_live_abc123xyz789" \
   -d '{
@@ -199,7 +199,7 @@ curl -X POST https://api.yourdomain.com/lead/submit \
 **Request:**
 
 ```bash
-curl -X POST https://api.yourdomain.com/lead/submit \
+curl -X POST https://api.dashmarketing.com/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: sk_live_abc123xyz789" \
   -d '{
@@ -242,7 +242,7 @@ curl -X POST https://api.yourdomain.com/lead/submit \
 ```javascript
 const submitLead = async (leadData) => {
   try {
-    const response = await fetch('https://api.yourdomain.com/lead/submit', {
+    const response = await fetch('https://api.dashmarketing.com/lead/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
