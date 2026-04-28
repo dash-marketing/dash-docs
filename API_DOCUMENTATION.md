@@ -1,8 +1,3 @@
----
-layout: default
-title: Dash Marketing API Documentation
----
-
 # Dash Marketing API Documentation
 
 ## Welcome to Dash Marketing
@@ -406,6 +401,6 @@ Your input helps us build better tools for your business.
 
 ---
 
-**Last Updated:** April 2026
+**Last Updated:** December 2025
 
-**Version:** 1.2
+**Version:** 1.0

@@ -56,7 +56,7 @@ If you have access to Dash Core, you can create and manage your own API keys:
 ### Endpoint
 
 ```
-POST /lead/Submit
+POST /lead/submit
 ```
 
 ### Headers
@@ -199,7 +199,7 @@ curl -X POST https://api.dashmarketing.io/lead/submit \
 **Request:**
 
 ```bash
-curl -X POST https://api.dashmarketing.com/lead/submit \
+curl -X POST https://api.dashmarketing.io/lead/submit \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: sk_live_abc123xyz789" \
   -d '{
@@ -242,7 +242,7 @@ curl -X POST https://api.dashmarketing.com/lead/submit \
 ```javascript
 const submitLead = async (leadData) => {
   try {
-    const response = await fetch('https://api.dashmarketing.com/lead/submit', {
+    const response = await fetch('https://api.dashmarketing.io/lead/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -253,7 +253,7 @@ const submitLead = async (leadData) => {
         firstName: leadData.firstName,
         lastName: leadData.lastName,
         phone: leadData.phone,
-        locationUuid: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // location UUID
+        locationUuid: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // Your location UUID
         source: 'Website',
         formName: 'Contact Form',
         notes: leadData.message,
@@ -353,7 +353,7 @@ function submitLead($email, $firstName = null, $lastName = null, $phone = null, 
         'firstName' => $firstName,
         'lastName' => $lastName,
         'phone' => $phone,
-        'locationUuid' => 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // location UUID
+        'locationUuid' => 'a1b2c3d4-e5f6-7890-abcd-ef1234567890', // Your location UUID
         'source' => 'Website',
         'formName' => 'Contact Form',
         'notes' => $notes,
@@ -491,7 +491,7 @@ Your location UUID is a unique identifier for each of your business locations. Y
 
 For technical support, questions, or to request higher rate limits:
 
-- **Email:** support@dashmarketing.io
+- **Email:** support@dashmarketing.com
 - **Documentation:** https://docs.dashmarketing.io
 
 ---
